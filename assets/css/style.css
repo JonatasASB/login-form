@@ -1,5 +1,10 @@
-
-
+* {
+    text-decoration: none;
+    font-family: "open sans";
+}
+body {
+    overflow-x: hidden !important;
+}
 .open-sans-josefins {
     font-family: "Open Sans", serif;
     font-optical-sizing: auto;
@@ -7,39 +12,98 @@
     font-style: normal;
     font-variation-settings: "wdth" 100;
 }
-main {
+.container {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 10px;
-}
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-.container-2 {
-    background-color: #fff;
-    border: #fff;
-    border-radius: 20px;
+    padding: 15px;
 }
 form {
     background-color: #fff;
-    min-width: 500px;
+    width: 550px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     overflow: hidden;
     border-radius: 25px;
     box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
     position: relative;
 }
 .title {
+    width: 100%;
     color: #fff;
     text-align: center;
-    font-weight: 500;
+    font-weight: 800;
     font-size: 40px;
     background-color:  #57b846;
     padding: 40px;
-    
+}
+.space-name {
+    margin: 40px 0 10px 0;
+}
+input {
+    padding: 15px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    background-color: #ddd;
+    width: 400px;
+
+}
+form .password {
+    margin-bottom: 20px;
+}
+::-webkit-input-placeholder  {
+     color:#333; 
+    }
+input:-moz-placeholder { color:#333; }
+textarea:-moz-placeholder { color: #333; }
+.forgot {
+    width: 400px;
+    text-align: right;
+    margin-bottom: 30px;
+}
+.forgot span{
+    color: #aaa;
+}
+.forgot a {
+    color: #57b846;
+}
+form .sign-in { 
+    width: 400px;
+}
+form .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: #57b846;
+    color: #fff;
+    font-size: 23px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+form .button:hover {
+    background-color:#0f2c0a ;
+    transition: all 0.3s linear;
+}
+.dont {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 170px 0 40px 0;
+}
+.dont p {
+    color: #aaa;
+    margin: 0 0 10px 0;
+}
+.dont a {
+    color: #57b846;
+    font-weight: 800;
 }
