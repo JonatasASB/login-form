@@ -107,3 +107,17 @@ form .button:hover {
     color: #57b846;
     font-weight: 800;
 }
+@media (max-width:450px) {
+    input {
+        width: 290px;
+    }
+    form .sign-in {
+        width: 290px;
+    }
+    .forgot {
+        width: 290px;
+    }
+    .button {
+        width: 290px;
+    }
+}
